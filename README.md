@@ -2,6 +2,7 @@
 
 1)Se descarga Postman https://www.getpostman.com/downloads/ de este enlace y se ejecuta
 
+https://github.com/DanielCalero12/2017B-Taller-ORM-Archivo/blob/master/images/Captura.PNG
 
 
 2)Para verificar las tablas ingresadas en la base de datos, se hace a travez de request Get 
