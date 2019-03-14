@@ -19,13 +19,11 @@ router.route('/')
             lastName: req.body.lastName,
             emailAddress: req.body.emailAddress,
         })
-        .save()
-        .then(function(saved) {
-            res.json({
-                saved
+        .save(null, {method: 'insert'})
+            .then(function(saved){
+                res.json({ saved });
             });
-        });
-});
+    });
 router.route('/:id')
     .put(function(req, res) {
         Contact
@@ -34,7 +32,6 @@ router.route('/:id')
             .then(function(contact) {
                 contact
                     .save({
-                        id: req.body.id,
                         firstName: req.body.firstName,
                         lastName: req.body.lastName,
                         emailAddress: req.body.emailAddress,
